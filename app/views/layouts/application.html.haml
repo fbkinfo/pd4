@@ -5,6 +5,12 @@
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
+    %style{:media => "print", :type => "text/css"}
+      \.buttons_box { display: none; }
   %body
-    = current_user ? link_to("Выйти", "/logout") : link_to("Войти", "/auth/volunteeria")
-    = yield
+    -#    = current_user ? link_to("Выйти", "/logout") : link_to("Войти", "/auth/volunteeria")
+    %table{ width: "100%", height: "100%" }
+      %tr
+        %td{ valign: 'middle', align: 'center'}
+          .container
+            = yield

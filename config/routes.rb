@@ -6,6 +6,6 @@ Donate::Application.routes.draw do
   get 'logout', to: 'sessions#destroy'
 
 
-  resources :receipts, only: [:create]
+  resource :receipt
 
 end

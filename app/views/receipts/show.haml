@@ -1,0 +1,158 @@
+- time = Time.now
+.main-dashed
+  .row1
+    .r1-l
+      %div{:style => "padding:10px 25px 10px 25px"}
+        .text-izv Извещение
+        .text-kas{:style => "margin-top: 180px;"} Кассир
+    .r1-r
+      %div{:style => "padding:10px 25px 10px 25px"}
+        .text-pd4 Форма № ПД-4
+        .line{:style => "width: 490px"} Навальный Алексей Анатольевич
+        .subtext{:style => "width: 490px"} (наименование получателя платежа)
+        .line{:style => "width: 180px"}   
+        %div{:style => "width: 28px;float: left"}  
+        %div.cell_container
+          - '40810810938040000005'.each_char do |c|
+            .cell= c
+        .subtext{:style => "width: 180px"} (ИНН получателя платежа)
+        .text{:style => "width: 28px"}  
+        .subtext{:style => "width: 280px"} (номер счета получателя платежа)
+        .line{:style => "width: 318px"} в ОАО «СБЕРБАНК РОССИИ»
+        .text{:style => "width: 44px; text-align: center"} БИК
+        %div.cell_container
+          - '044525225'.each_char do |c|
+            .cell= c
+        .subtext{:style => "width: 318px"} (наименование банка получателя платежа)
+        .text{:style => "width: 44px"}  
+        .subtext{:style => "width: 110px"}  
+        .text{:style => "width: 208px"} Номер кор./сч. банка получателя платежа
+        %div.cell_container
+          - '30101810400000000225'.each_char do |c|
+            .cell= c
+        %div{:style => "float: left; width: 488px; height: 3px; font-size: 3px"}  
+        .line{:style => "width: 287px; border-bottom: 0; line-height: 10px"}
+          Добр. пожертв. в изб. фонд канд. Навального А.А., #{params[:name]}, пасп #{params[:passp]}, д/р #{params[:bdate]}, #{params[:address]}, гражд. #{params[:citizen]}
+        .text{:style => "width: 22px; text-align: center"}  
+        .text{:style => "width: 180px"}  
+        .subtext{:style => "width: 287px; border-top: 1px solid #000"} (наименование платежа)
+        .text{:style => "width: 22px"}  
+        .subtext{:style => "width: 180px; border-top: 1px solid #000"} (номер лицевого счета (код) плательщика)
+        .text{:style => "width: 107px"} Ф.И.О. плательщика
+        .line{:style => "width: 381px"}
+          = params[:name]
+        .text{:style => "width: 100px"} Адрес плательщика
+        .line{:style => "width: 388px"}
+          = params[:address]
+        .text{:style => "width: 80px"} Сумма платежа
+        .line{:style => "width: 51px"}
+          = params[:amount]
+        .text{:style => "width: 22px"} руб.
+        .line{:style => "width: 21px"} 00
+        .text{:style => "width: 22px"} коп.
+        .text{:style => "width: 58px"}  
+        .text{:style => "width: 118px"} Сумма платы за услуги
+        .line{:style => "width: 51px"}  
+        .text{:style => "width: 22px"} руб.
+        .line{:style => "width: 21px"}  
+        .text{:style => "width: 22px"} коп.
+        .text{:style => "width: 32px"} Итого
+        .line{:style => "width: 51px"}  
+        .text{:style => "width: 22px"} руб.
+        .line{:style => "width: 21px"}  
+        .text{:style => "width: 22px"} коп.
+        .text{:style => "width: 152px"}  
+        .text{:style => "width: 5px"} "
+        .line{:style => "width: 31px"}
+          =l time, format: '%d'
+        .text{:style => "width: 5px"} "
+        .line{:style => "width: 108px"}
+          =l time, format: '%B'
+        .text{:style => "width: 10px"} 20
+        .line{:style => "width: 20px"}
+          =l time, format: '%y'
+        .text{:style => "width: 5px"} г.
+        .text{:style => "width: 152px; height: 4px; font-size: 4px"}  
+        .text{:style => "height:22px"}
+          С условиями приема указанной в платежном документе суммы, в т.ч. с суммой взимаемой платы за услуги банка, ознакомлен и согласен.
+        .text{:style => "width: 230px"}  
+        .text{:style => "font-weight: bold; width: 125px"} Подпись плательщика:
+        .line{:style => "width: 130px"}  
+  .row2
+    .r1-l
+      %div{:style => "padding:5px 25px 10px 25px"}
+        .text-kvi Квитанция
+        .text-kas{:style => "margin-top: 10px;"} Кассир
+    .r1-r
+      %div{:style => "padding:5px 25px 10px 25px"}
+        .text-pd4  
+        .line{:style => "width: 490px"} Навальный Алексей Анатольевич
+        .subtext{:style => "width: 490px"} (наименование получателя платежа)
+        .line{:style => "width: 180px"}   
+        %div{:style => "width: 28px;float: left"}  
+        %div.cell_container
+          - '40810810938040000005'.each_char do |c|
+            .cell= c
+        .subtext{:style => "width: 180px"} (ИНН получателя платежа)
+        .text{:style => "width: 28px"}  
+        .subtext{:style => "width: 280px"} (номер счета получателя платежа)
+        .line{:style => "width: 318px"} в ОАО «СБЕРБАНК РОССИИ»
+        .text{:style => "width: 44px; text-align: center"} БИК
+        %div.cell_container
+          - '044525225'.each_char do |c|
+            .cell= c
+        .subtext{:style => "width: 327px"} (наименование банка получателя платежа)
+        .text{:style => "width: 44px"}  
+        .subtext{:style => "width: 110px"}  
+        .text{:style => "width: 208px"} Номер кор./сч. банка получателя платежа
+        %div.cell_container
+          - '30101810400000000225'.each_char do |c|
+            .cell= c
+        %div{:style => "float: left; width: 488px; height: 3px; font-size: 3px"}  
+        .line{:style => "width: 287px; border-bottom: 0; line-height: 10px"}
+          Добр. пожертв. в изб. фонд канд. Навального А.А., #{params[:name]}, пасп #{params[:passp]}, д/р #{params[:bdate]}, #{params[:address]}, гражд. #{params[:citizen]}
+        .text{:style => "width: 22px; text-align: center"}  
+        .text{:style => "width: 180px"}  
+        .subtext{:style => "width: 287px; border-top: 1px solid #000"} (наименование платежа)
+        .text{:style => "width: 22px"}  
+        .subtext{:style => "width: 180px; border-top: 1px solid #000"} (номер лицевого счета (код) плательщика)
+        .text{:style => "width: 107px"} Ф.И.О. плательщика
+        .line{:style => "width: 381px"}
+          = params[:name]
+        .text{:style => "width: 100px"} Адрес плательщика
+        .line{:style => "width: 388px"}
+          = params[:address]
+        .text{:style => "width: 80px"} Сумма платежа
+        .line{:style => "width: 51px"}
+          = params[:amount]
+        .text{:style => "width: 22px"} руб.
+        .line{:style => "width: 21px"} 00
+        .text{:style => "width: 22px"} коп.
+        .text{:style => "width: 58px"}  
+        .text{:style => "width: 118px"} Сумма платы за услуги
+        .line{:style => "width: 51px"}  
+        .text{:style => "width: 22px"} руб.
+        .line{:style => "width: 21px"}  
+        .text{:style => "width: 22px"} коп.
+        .text{:style => "width: 32px"} Итого
+        .line{:style => "width: 51px"}  
+        .text{:style => "width: 22px"} руб.
+        .line{:style => "width: 21px"}  
+        .text{:style => "width: 22px"} коп.
+        .text{:style => "width: 152px"}  
+        .text{:style => "width: 5px"} "
+        .line{:style => "width: 31px"}
+          =l time, format: '%d'
+        .text{:style => "width: 5px"} "
+        .line{:style => "width: 108px"}
+          =l time, format: '%B'
+        .text{:style => "width: 10px"} 20
+        .line{:style => "width: 20px"}
+          =l time, format: '%y'
+        .text{:style => "width: 5px"} г.
+        .text{:style => "width: 152px; height: 4px; font-size: 4px"}  
+        .text{:style => "height:22px"}
+          С условиями приема указанной в платежном документе суммы, в т.ч. с суммой взимаемой платы за услуги банка, ознакомлен и согласен.
+        .text{:style => "width: 230px"}  
+        .text{:style => "font-weight: bold; width: 125px"} Подпись плательщика:
+        .line{:style => "width: 130px"}  

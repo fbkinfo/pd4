@@ -11,3 +11,137 @@
  *= require_self
  *= require_tree .
  */
+ 
+body {
+  padding: 40px;
+}
+ 
+ .main-dashed {
+ 	line-height: 12px;
+ 	border: 1px dashed #000;
+ 	font-size: 10px;
+ 	width: 734px;
+ 	text-align: left;
+}
+
+.r1-l {
+ 	display: table-cell;
+ 	float:left;
+ 	width: 190px;
+ 	padding-bottom: 1px;
+}
+
+.r1-r {
+ 	display: table-cell;
+ 	width: 490px;
+ 	border-left: 1px solid #000;
+ 	padding-bottom: 1px;
+}
+
+.row1 {
+   border-bottom: 1px solid #000;
+}
+
+.text-izv {
+ 	margin-top: 20px;
+ 	letter-spacing: 3px;
+ 	text-align: center;
+ 	font-weight: bold;
+ 	font-size: 12px;
+}
+
+.text-kvi {
+ 	letter-spacing: 3px;
+ 	text-align: center;
+ 	font-weight: bold;
+ 	margin-top: 210px;
+ 	font-size: 12px;
+}
+
+.text-kas {
+ 	letter-spacing: 1px;
+ 	text-align: center;
+ 	font-weight: bold;
+ 	font-size: 12px;
+}
+
+.text-pd4 {
+ 	font-style: italic;
+ 	text-align: right;
+}
+
+.line {
+  min-height: 13px;
+ 	float: left;
+ 	border-bottom: 1px solid #000;
+ 	font-weight: bold;
+ 	text-align: center;
+ 	font-family: Arial, sans-serif;
+ 	font-size: 11px;
+}
+
+.subtext {
+ 	float: left;
+ 	font-size: 80%;
+ 	text-align: center;
+ 	line-height: 9px;
+}
+
+.cell {
+ 	line-height: 13px;
+ 	float: left;
+ 	width: 13px;
+ 	height: 13px;
+ 	border: 1px solid #000;
+ 	border-right: 0;
+ 	text-align: center;
+ 	font-weight: bold;
+}
+
+.cell:last-child {
+ 	border-right: 1px solid #000;
+}
+
+.text {
+ 	height: 13px;
+ 	float: left;
+}
+
+.cell_container {
+   float: left; 
+}
+
+
+/* --- */
+
+
+.form_div {
+  width: 740px;
+  text-align: left;
+  padding: 50px 50px 75px 50px;
+}
+
+.buttons_box {
+  width: 696px;
+}
+
+.buttons_box form {
+  margin: 0;
+}
+
+.make-receipt {
+  margin-left: 230px;
+  width: 220px;
+}
+
+.ins-row {
+  clear: both;
+}
+
+.row1 .ins-row {
+  height: 12px;
+}
+
+.row2 .ins-row {
+  height: 16px;
+}

@@ -1,14 +1,10 @@
 - time = Time.now
-.well.buttons_box
-  %form{:action => "receipt.pdf", :method => "post"}
-    %button#btn-print.btn.btn-primary.icon-print Распечатать
-    %button#btn-print.btn.btn-primary.icon-download Загрузить PDF
 .main-dashed
   .row1
     .r1-l
       %div{:style => "padding:10px 25px 10px 25px"}
-        .text-izv Извещение
-        .text-kas{:style => "margin-top: 160px;"} Кассир
+        .text-izv{:style => "letter-spacing: 0px"} И з в е щ е н и е
+        .text-kas{:style => "margin-top: 160px; letter-spacing: 0px"} К а с с и р
     .r1-r
       %div{:style => "padding:10px 25px 10px 25px"}
         .ins-row
@@ -44,7 +40,7 @@
         %div{:style => "float: left; width: 488px; height: 3px; font-size: 3px"}  
         .ins-row
           .line{:style => "width: 287px; border-bottom: 0; line-height: 10px"}
-            Добр. пожертв. в изб. фонд канд. Навального А.А., пасп #{params[:passp]}, д/р #{params[:bdate]}, гражд. #{params[:citizen]}
+            Добр. пожертв. в изб. фонд канд. Навального А.А., пасп #{flash[:passp]}, д/р #{flash[:bdate]}, гражд. #{flash[:citizen]}
           .text{:style => "width: 22px; text-align: center"}  
           .text{:style => "width: 180px"}  
         .ins-row
@@ -54,15 +50,15 @@
         .ins-row
           .text{:style => "width: 107px"} Ф.И.О. плательщика
           .line{:style => "width: 381px"}
-            = params[:name]
+            = flash[:name]
         .ins-row
           .text{:style => "width: 100px"} Адрес плательщика
           .line{:style => "width: 388px"}
-            = params[:address]
+            = flash[:address]
         .ins-row
           .text{:style => "width: 80px"} Сумма платежа
           .line{:style => "width: 51px"}
-            = params[:amount]
+            = flash[:amount]
           .text{:style => "width: 22px"} руб.
           .line{:style => "width: 21px"} 00
           .text{:style => "width: 22px"} коп.
@@ -100,8 +96,8 @@
   .row2
     .r1-l
       %div{:style => "padding:5px 25px 10px 25px"}
-        .text-kvi Квитанция
-        .text-kas{:style => "margin-top: 10px;"} Кассир
+        .text-kvi{:style => "letter-spacing: 0px"} К в и т а н ц и я
+        .text-kas{:style => "margin-top: 10px; letter-spacing: 0px"} К а с с и р
     .r1-r
       %div{:style => "padding:10px 25px 10px 25px"}
         .ins-row
@@ -137,7 +133,7 @@
         %div{:style => "float: left; width: 488px; height: 3px; font-size: 3px"}  
         .ins-row
           .line{:style => "width: 287px; border-bottom: 0; line-height: 10px"}
-            Добр. пожертв. в изб. фонд канд. Навального А.А., пасп #{params[:passp]}, д/р #{params[:bdate]}, гражд. #{params[:citizen]}
+            Добр. пожертв. в изб. фонд канд. Навального А.А., пасп #{flash[:passp]}, д/р #{flash[:bdate]}, гражд. #{flash[:citizen]}
           .text{:style => "width: 22px; text-align: center"}  
           .text{:style => "width: 180px"}  
         .ins-row
@@ -147,15 +143,15 @@
         .ins-row
           .text{:style => "width: 107px"} Ф.И.О. плательщика
           .line{:style => "width: 381px"}
-            = params[:name]
+            = flash[:name]
         .ins-row
           .text{:style => "width: 100px"} Адрес плательщика
           .line{:style => "width: 388px"}
-            = params[:address]
+            = flash[:address]
         .ins-row
           .text{:style => "width: 80px"} Сумма платежа
           .line{:style => "width: 51px"}
-            = params[:amount]
+            = flash[:amount]
           .text{:style => "width: 22px"} руб.
           .line{:style => "width: 21px"} 00
           .text{:style => "width: 22px"} коп.

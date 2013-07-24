@@ -1,0 +1,30 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+  
+.form-horizontal .control-label {
+  width: 220px;
+  padding-right: 10px;
+  padding-top: 5px;
+  text-align: right;
+}
+
+.control-group.info .help-inline {
+  font-style: italic;
+  color: #999;
+}
+
+.control-group.info input {
+  color: #222;
+  width: 211px;
+  
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  margin-right: 5px;
+}
+
