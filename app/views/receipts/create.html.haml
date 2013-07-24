@@ -1,5 +1,9 @@
 - time = Time.now
 .well.buttons_box
+  %div{:style => "padding-bottom: 10px"}
+    %strong
+      Внимание:
+    при оплате необходимо иметь при себе паспорт
   %form{:action => "receipt.pdf", :method => "post"}
     %button#btn-print.btn.btn-primary.icon-print Распечатать
     %button#btn-print.btn.btn-primary.icon-download Загрузить PDF

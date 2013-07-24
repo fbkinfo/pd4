@@ -115,10 +115,10 @@ body {
 
 /* --- */
 
-
 .form_div {
   width: 740px;
   text-align: left;
+  margin-top: 30px;
   padding: 50px 50px 75px 50px;
 }
 
