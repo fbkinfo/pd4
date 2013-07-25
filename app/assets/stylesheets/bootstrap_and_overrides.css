@@ -5,6 +5,18 @@
   To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
   =require twitter-bootstrap-static/fontawesome
   */
+
+.control-group.info .control-label,
+.control-group.info .help-block,
+.control-group.info .help-inline {
+  color: #008594;
+}
+  
+.control-group.info input,
+.control-group.info select,
+.control-group.info textarea {
+  border-color: #008594;
+}
   
 .form-horizontal .control-label {
   width: 220px;
@@ -29,13 +41,21 @@
 }
 
 h4 {
-  font-family: 'PT Serif', serif;
-	color: #757;
-	font-size: 22px;
-	line-height: 25px;
+  font-family: 'PT Sans', serif;
+	color: #008594;
+	font-size: 25px;
+	line-height: 30px;
 }
 
 .container {
 	width: 776px;
 	text-align: center;
+}
+
+.btn-primary {
+	background-color: #008594;
+}
+
+.btn-primary:hover {
+	background-color: #0094a5;
 }

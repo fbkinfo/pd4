@@ -2,7 +2,9 @@ $(function(){
 
   $("#name").focus();
 
-  $("#citizen").prettyCheckable();
+  $("#citizen").prettyCheckable({
+      color: 'gray'
+  });
 
   $("#btn-print").click(function(e) {
     e.preventDefault();
@@ -41,8 +43,8 @@ $(function(){
       return false;
     }
       
-    if(!(/^[А-Яа-я0-9\.\-\/ ]+$/.test($("#address").val()))) {
-      alert("Поле 'Адрес' может содержать только русские буквы, пробелы, а так же точку, тире и знак дроби '/'.");
+    if(!(/^[А-Яа-я0-9\.\-\/\, ]+$/.test($("#address").val()))) {
+      alert("Поле 'Адрес' может содержать только русские буквы, пробелы, а так же точку, запятую, тире и знак дроби.");
       $("#address").focus();
       return false;
     }
