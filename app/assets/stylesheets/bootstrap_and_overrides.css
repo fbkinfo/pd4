@@ -29,10 +29,13 @@
 }
 
 h4 {
+  font-family: 'PT Serif', serif;
 	color: #757;
+	font-size: 22px;
+	line-height: 25px;
 }
 
 .container {
-	width: 736px;
+	width: 776px;
 	text-align: center;
 }

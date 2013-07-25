@@ -4,7 +4,7 @@
   %br/
   заполните, пожалуйста, эту форму:
 .well.form_div
-  .control-group.info
+  .control-group.info{:style => "margin-top: 20px;"}
     %label.control-label{:for => "name"} Фамилия Имя Отчество
     = text_field_tag 'name'
     %span.help-inline Пример: Иванов Иван Иванович
@@ -21,11 +21,14 @@
     = text_field_tag 'address'
     %span.help-inline Пример: Москва, Ленинский пр-т 1-1-1
   .control-group.info
-    %label.control-label{:for => "citizen"} Гражданство
-    = text_field_tag 'citizen'
-    %span.help-inline Пример: РФ
-  .control-group.info
     %label.control-label{:for => "amount"} Сумма пожертвования в рублях
     = text_field_tag 'amount'
     %span.help-inline Пример: 1000
-  %button#btn-make.btn.btn-primary.make-receipt.icon-file Сформировать квитанцию
+  .control-group.info
+    %label.control-label{:for => "citizen"} Гражданство РФ
+    = check_box_tag 'citizen', 'РФ', true
+    %span.help-inline
+  .control-group.info
+    %label.control-label
+    %button#btn-make.btn.btn-primary.make-receipt.icon-file Сформировать квитанцию
+    %span.help-inline
