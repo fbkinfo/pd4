@@ -3,7 +3,6 @@
   %head
     %meta{:charset => "utf-8"}
     %title Формирование квитанции ПД-4 для внесения добровольного пожертвования в избирательный фонд кандидата в мэры г.Москва Навального Алексея Анатольевича
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     %meta{:content => "Формирование квитанции ПД-4 для внесения добровольного пожертвования в избирательный фонд кандидата в мэры г.Москва Навального Алексея Анатольевича", :name => "description"}
     %meta{:content => "Навальный,кандидат,добровольное,пожертвование,избирательный,фонд,сбербанк,квитанция,пд-4", :name => "keywords"}
     %meta{:content => "", :name => "author"}
@@ -14,8 +13,5 @@
       \.buttons_box { display: none; }
   %body
     -#    = current_user ? link_to("Выйти", "/logout") : link_to("Войти", "/auth/volunteeria")
-    %table{ width: "100%", height: "100%" }
-      %tr
-        %td{ valign: 'middle', align: 'center'}
-          .container
-            = yield
+    .container
+      = yield

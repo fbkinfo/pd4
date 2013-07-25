@@ -13,15 +13,18 @@
  */
  
 body {
-  padding: 40px;
+  padding-top: 40px;
+  margin: 0;
 }
  
- .main-dashed {
- 	line-height: 12px;
- 	border: 1px dashed #000;
- 	font-size: 10px;
- 	width: 734px;
- 	text-align: left;
+.main-dashed {
+	line-height: 12px;
+	border: 1px dashed #000;
+	font-size: 10px;
+	width: 734px;
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .r1-l {
@@ -116,7 +119,9 @@ body {
 /* --- */
 
 .form_div {
-  width: 740px;
+  width: 736px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
   margin-top: 30px;
   padding: 50px 50px 75px 50px;
@@ -124,6 +129,8 @@ body {
 
 .buttons_box {
   width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .buttons_box form {
