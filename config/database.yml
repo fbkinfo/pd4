@@ -3,7 +3,7 @@ development:
   database: volunteeria_donate
   username: volunteeria
   password: volunteeria
-  host: /var/run/postgresql
+  host: /tmp
   port: 5432
   pool: 5
   timeout: 5000
